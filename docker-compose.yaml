@@ -1,0 +1,20 @@
+version: '3'
+services:
+  sender:
+    build:
+      context: ./sender  # Path to the sender service's Dockerfile and code
+    ports:
+      - "8001:8000"  # Map sender service's port 8000 to host port 8001
+    networks:
+      - mynetwork
+
+  receiver:
+    build:
+      context: ./receiver  # Path to the receiver service's Dockerfile and code
+    ports:
+      - "8002:8000"  # Map receiver service's port 8000 to host port 8002
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:  # Allows the sender and receiver to communicate using service names as hostnames
