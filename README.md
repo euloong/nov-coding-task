@@ -6,6 +6,10 @@ One has an endpoint `/send` which accepts a request with a message parameter. It
 
 You will then be able to visit the first service via a browser or curl command on `/send` and issue a message that will be displayed in the stdout of the docker-compose network while it's running.
 
+## Prerequisites
+
+[Install Docker Compose instructions](https://docs.docker.com/compose/install/)
+
 ## Running locally
 
 I created a sender service that will accept a message parameter in the browser or with a curl command. It then posts the message to the receiver service which in turn displays the message in the stdout of the running docker-compose network.
