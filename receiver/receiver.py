@@ -17,4 +17,4 @@ def receive_message(message: dict):
         print("Received message from sender service:", received_message)
         return {"status": "Message received successfully by receiver service"}
     else:
-        return {"status": "Invalid message format"}, 400
+        return {"status": "Invalid message format"}

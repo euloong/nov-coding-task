@@ -5,6 +5,6 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY receiver_app.py /app/receiver_app.py
+COPY receiver.py /app/receiver.py
 
-CMD ["uvicorn", "receiver_app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "receiver:app", "--host", "0.0.0.0", "--port", "8000"]

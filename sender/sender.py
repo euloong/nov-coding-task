@@ -20,4 +20,4 @@ def send_message(message: str):
     if response.status_code == 200:
         return {"status": "Message sent successfully by sender service", "response from receiver service": response.json()}
     else:
-        return {"status": "Failed to send message"}, 500
+        return {"status": "Failed to send message"}

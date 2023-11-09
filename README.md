@@ -42,3 +42,13 @@ I created a sender service that will accept a message parameter in the browser o
     ```
 
 5. Check that you get a successful response back.
+
+## Running tests
+
+Use make to run the unit tests:
+
+```test
+make test-sender
+make test-receiver
+make test-all
+```
