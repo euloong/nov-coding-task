@@ -17,7 +17,7 @@ I created a sender service that will accept a message parameter in the browser o
 1. To build the services, run:
 
     ```text
-    docker-compose build --no-cache
+    docker-compose build
     ```
 
 2. Then run:
